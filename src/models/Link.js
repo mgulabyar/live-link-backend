@@ -1,10 +1,12 @@
-const mongoose = require("mongoose");
-
 const LinkSchema = new mongoose.Schema({
   linkId: { 
     type: String, 
     required: true, 
     unique: true 
+  },
+  componentName: { 
+    type: String, 
+    default: "" 
   },
   excelFileId: { 
     type: String, 
